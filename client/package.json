@@ -4,7 +4,7 @@
   "description": "Node.js GraphQL app that simulates a basic reservations system",
   "private": "true",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "env-cmd -f ./config/test.env",
     "start": "./src/index.jsx",
     "build": "webpack"
   },
@@ -13,7 +13,7 @@
     "url": "git+https://github.com/Andreicabrerao/ReservationSystem.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Andrei Cabrera",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Andreicabrerao/ReservationSystem/issues"
@@ -27,7 +27,6 @@
     "apollo-server-express": "^2.24.0",
     "connect": "^3.7.0",
     "cors": "^2.8.5",
-    "dns": "file:./client/dns",
     "express": "^4.17.1",
     "express-graphql": "^0.12.0",
     "framer-motion": "^4.1.16",
@@ -41,6 +40,7 @@
     "mongodb-client-encryption": "^1.2.3",
     "mongoose": "^5.12.9",
     "path": "^0.12.7",
+    "pdfkit": "^0.12.1",
     "qs-middleware": "^1.0.3",
     "react-datepicker": "^3.8.0",
     "stream": "0.0.2",

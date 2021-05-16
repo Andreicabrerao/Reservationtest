@@ -18,7 +18,7 @@ module.exports = {
 	resolve: {
 		modules: ['node_modules', './src'],
 		extensions: ['.js', '.jsx'],
-		fallback: {"path": false}
+		fallback: {"path": require.resolve("path-browserify")}
 	},
 	module: {
 		rules: [
