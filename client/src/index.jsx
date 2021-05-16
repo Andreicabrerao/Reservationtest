@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import { ChakraProvider } from "@chakra-ui/react"
 import Main from '../Main'
 import { render } from 'react-dom';
-import { document } from "@ungap/global-this";
 
 //function App({ Component }) {
   // 2. Use at the root of your app

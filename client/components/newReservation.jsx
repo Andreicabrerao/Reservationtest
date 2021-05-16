@@ -1,7 +1,7 @@
 //import React paskages
 import React, { useState } from "react";
 import DatePicker from "react-datepicker"
-import { Divider, Input, Grid, GridItem, FormControl, FormLabel, Container, Box, Button, Heading, Text, Center, Img, GridItem } from '@chakra-ui/react'
+import { Divider, Input, Grid, GridItem, FormControl, FormLabel, Container, Box, Button, Heading, Text, Center, Img} from '@chakra-ui/react'
 
 
 

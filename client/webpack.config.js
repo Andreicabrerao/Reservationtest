@@ -1,5 +1,4 @@
 const path = require('path');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const port = process.env.PORT || 3000;
 
 
@@ -10,6 +9,7 @@ const host = process.env.HOST || "localhost";
 
 module.exports = {
 	context: __dirname,
+	mode: 'production',
 	entry: './src/index.jsx',
 	output: {
 		path: path.join(__dirname, 'dist'),
@@ -18,21 +18,10 @@ module.exports = {
 	resolve: {
 		modules: ['node_modules', './src'],
 		extensions: ['.js', '.jsx'],
+		fallback: {"path": false}
 	},
 	module: {
 		rules: [
-			{
-				test: /\.scss$/,
-				use: ExtractTextPlugin.extract({
-					use: 'css-loader!sass-loader'
-				}),
-			},
-			{
-				test: /\.css$/,
-				use: ExtractTextPlugin.extract({
-					use: 'css-loader'
-				}),
-			},
 			{
 				test: /\.(js|jsx)$/,
 				loader: 'babel-loader',
@@ -40,9 +29,6 @@ module.exports = {
 			}
 		]
 	},
-	plugins: [
-		new ExtractTextPlugin("bundle.css"),
-	],
 	devServer: {
 		port,
         host: host,
@@ -51,5 +37,14 @@ module.exports = {
         watchOptions: {
             ignored: '/node_modules/'
         },
-	}
+	},
+	externals: [
+		"child_process",
+		"dns",
+		"fs",
+		"net",
+		"tls",
+		"os",
+		"crypto"
+	  ]
 }

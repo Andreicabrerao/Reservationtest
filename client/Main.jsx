@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import ReservationsMade from '../components/reservationsMade'
-import NewReservation from '../components/NewReservation'
+import ReservationsMade from './components/reservationsMade'
+import NewReservation from './components/NewReservation'
 import { Divider, Grid, GridItem, Button } from '@chakra-ui/react'
 import { ResumeToken } from "mongodb";
 
@@ -9,7 +9,7 @@ let Main = () => {
     let [display, setDisplay] = useState('ReservationSearch')
 
 
-            }
+            
 return (
     <>
         <Grid pt={2} templateColumns={["repeat(2, 1fr)"]}>
@@ -28,5 +28,6 @@ return (
         }
     </>
 )
+    }
 
 export default Main;
