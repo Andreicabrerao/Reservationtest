@@ -1,14 +1,15 @@
+//import Reaact packages
 import React, { useState, useEffect} from "react";
 import DatePicker from "react-datepicker"
 import { Divider, Input, Grid, GridItem, FormControl, FormLabel, Container, Box, Button, Heading, Text, Center, Img, GridItem } from '@chakra-ui/react'
 
-
+//all the reservations Reservations made
 let ReservationsMade = ({data}) => {
 
   //query call to get all the data 
 
   // first name, last name hotel name, arrival date, departure date
-
+  //initial state 
   let [iDInput, setIDInput] = useState()
   let [displayedRes, setDisplayedRez] = useState()
 

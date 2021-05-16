@@ -1,8 +1,11 @@
 const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const port = process.env.PORT || 3000;
+
+
 
 const outputPath = path.join(__dirname, "dist")
-const port = process.env.PORT || 3000;
+
 const host = process.env.HOST || "localhost";
 
 module.exports = {

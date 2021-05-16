@@ -7,20 +7,17 @@ const Reservation = require('../model/model');
 
 const resolvers = {
     Query: {
-        // Resolver function to get all reservations
-
+        // get all the reservations already made
         reservations: async () => {
             return await Reservation.find({}).exec();
         },
-        // Resolver function to get a reservation record by ID
-
+        // get the reservation record by ID
         reservation: async (parent, { _id }) => {
             return await Reservation.findOne({ _id: _id }).exec();
         }
     },
     Mutation: {
-        // Resolver function to create a new reservation
-
+        // this will create new reservations
         createReservation: async (parent, fields) => {
             if ("arrivalDate" in fields) {
                 fields["arrivalDate"] = new Date(fields["arrivalDate"]);
@@ -38,10 +35,10 @@ const resolvers = {
         name: 'Date',
         description: 'Date custom scalar type',
         parseValue(value) {
-            return new Date(value); // value from the client
+            return new Date(value);
         },
         serialize(value) {
-            return value; // value sent to the client
+            return value; 
         },
         parseLiteral(ast) {
             return new Date(ast.value);
