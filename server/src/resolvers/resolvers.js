@@ -17,20 +17,24 @@ const resolvers = {
             return await Reservation.findOne({ _id: _id }).exec();
         }
     },
+
+    
     Mutation: {
         // Create new reservations
-        createReservation: async (parent, fields) => {
-            if ("arrivalDate" in fields) {
-                fields["arrivalDate"] = new Date(fields["arrivalDate"]);
+        createReservation: async (parent, input) => {
+            if ("arrivalDate" in input) {
+                input["arrivalDate"] = new Date(input["arrivalDate"]);
             }
 
-            if ("departureDate" in fields) {
-                fields["departureDate"] = new Date(fields["departureDate"]);
+            if ("departureDate" in input) {
+                input["departureDate"] = new Date(input["departureDate"]);
             }
 
-            return await Reservation.create(fields);
+            return await Reservation.create(input);
         }
     },
+
+
     // Custom scalar type for Dates in MongoDB
     Date: new GraphQLScalarType({
         name: 'Date',

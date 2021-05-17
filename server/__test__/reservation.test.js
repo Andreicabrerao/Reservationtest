@@ -5,9 +5,9 @@ describe('createReservation', () => {
       const result = resolvers.Mutation.createReservation(
         null,
         {
-          fields: 'Andrei',
+          inputs: 'Andrei',
         },
-        { field: { date: '2010-11-01', guest: 'Andrei' } },
+        { input: { date: '2010-11-01', guest: 'Andrei' } },
         null
       );
    
