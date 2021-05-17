@@ -4,8 +4,6 @@ const dotenv = require('dotenv');
 dotenv.config();
 //Connection with DB
 const URI = `mongodb+srv://AndreiCabrera:Felizes3@reservationtest1.8k0bi.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`;
-
-
 Mongoose.connect(URI, { useUnifiedTopology: true, useNewUrlParser: true })
     .then((res)=>{
         console.log("Connected to mongoose")
@@ -14,7 +12,7 @@ Mongoose.connect(URI, { useUnifiedTopology: true, useNewUrlParser: true })
 
 
 
-// Reservation Schema
+// Reservation Schema for db in Mongoose
 const reservationMongoose = Mongoose.Schema({
     id: String,
     guestName: String,

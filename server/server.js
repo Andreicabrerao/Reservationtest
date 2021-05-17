@@ -1,9 +1,9 @@
-// extract Node and express packages and Appolo server
-const { ApolloServer, gql } = require('apollo-server-express');
+// Extract Node and express packages 
 const express = require('express');
 const path = require('path');
 const chalk = require('chalk');
 const cors = require('cors');
+
 //extract tools from graphQL
 const { graphqlHTTP } = require('express-graphql')
 const { makeExecutableSchema } =require('@graphql-tools/schema');

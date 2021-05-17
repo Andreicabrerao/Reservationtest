@@ -5,19 +5,20 @@ const { Kind } = require('graphql/language');
 // import Reservation mongoose db
 const Reservation = require('../model/model');
 
+//Create the resolver
 const resolvers = {
     Query: {
         // get all the reservations already made
         reservations: async () => {
             return await Reservation.find({}).exec();
         },
-        // get the reservation record by ID
+        // get the reservation by ID
         reservation: async (parent, { _id }) => {
             return await Reservation.findOne({ _id: _id }).exec();
         }
     },
     Mutation: {
-        // this will create new reservations
+        // Create new reservations
         createReservation: async (parent, fields) => {
             if ("arrivalDate" in fields) {
                 fields["arrivalDate"] = new Date(fields["arrivalDate"]);
@@ -45,5 +46,5 @@ const resolvers = {
         }
     })
 }
-
+//Export the resolvers 
 module.exports =resolvers
