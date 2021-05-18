@@ -52,6 +52,7 @@ mutation {
 
 * Add authentication
 * Use Chakra UI for client side
+* Validate date using UI to validate the dates in the frontend side
 * Add delete and edit functionality for the user/guest/dates
 * Caching (Redis or Appollo) of some sort
 
