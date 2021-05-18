@@ -5,7 +5,7 @@ Node.js GraphQL app that simulates a reservations system.
 # Installation
 - Clone the code
 - Navigate to the verver folder: `CD server` folder
-- Run `npm install` and then `npm start`
+- Run `npm install` for dependencies and then `npm start`
 - Type in your browser: `http://localhost:3000/`
 
 # Sample Queries and Mutations
@@ -54,3 +54,5 @@ mutation {
 * Use Chakra UI for client side
 * Add delete and edit functionality for the user/guest/dates
 * Caching (Redis or Appollo) of some sort
+
+* I kept the access to the DB on purpose instead of adding .env file for the test
