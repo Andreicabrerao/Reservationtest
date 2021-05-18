@@ -1,0 +1,113 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Mutations for reservation reservations 1`] = `
+Object {
+  "reservations": Array [
+    Object {
+      "_id": "60a05c481115ef623ca257a5",
+      "arrivalDate": 2017-11-25T23:55:35.116Z,
+      "departureDate": 2018-11-25T23:55:35.116Z,
+      "guestName": "Andrei",
+      "hotelName": "Hilton",
+    },
+    Object {
+      "_id": "60a2b328ff1ff0b1bad12a7b",
+      "arrivalDate": 2017-11-25T23:55:35.116Z,
+      "departureDate": 2018-11-25T23:55:35.116Z,
+      "guestName": "Andrei",
+      "hotelName": "Hilton",
+    },
+    Object {
+      "_id": "60a2b4e19eb599b23ee49c9a",
+      "arrivalDate": 2017-11-25T23:55:35.116Z,
+      "departureDate": 2018-11-25T23:55:35.116Z,
+      "guestName": "Steven",
+      "hotelName": "Others",
+    },
+    Object {
+      "_id": "60a2c955f3a0eab483655345",
+      "arrivalDate": 2017-11-26T04:54:35.000Z,
+      "departureDate": 2017-11-25T23:55:35.116Z,
+      "guestName": "another",
+      "hotelName": "hotel1",
+    },
+    Object {
+      "_id": "60a2ca1db65721b498fe244d",
+      "arrivalDate": 2017-10-25T23:51:34.116Z,
+      "departureDate": 2018-11-25T23:55:35.116Z,
+      "guestName": "another2",
+      "hotelName": "hotel1",
+    },
+    Object {
+      "_id": "60a2ca3db65721b498fe244e",
+      "arrivalDate": 2016-10-26T03:51:34.000Z,
+      "departureDate": 2018-11-26T04:55:35.000Z,
+      "guestName": "another3",
+      "hotelName": "hotel5",
+    },
+    Object {
+      "_id": "60a2f3019990b3b67d74e4e1",
+      "arrivalDate": 2018-11-25T23:55:35.116Z,
+      "departureDate": 2019-11-25T23:55:35.116Z,
+      "guestName": "Lanre",
+      "hotelName": "hilton",
+    },
+  ],
+}
+`;
+
+exports[`queries reservations 1`] = `
+Object {
+  "reservations": Array [
+    Object {
+      "_id": "60a05c481115ef623ca257a5",
+      "arrivalDate": 2017-11-25T23:55:35.116Z,
+      "departureDate": 2018-11-25T23:55:35.116Z,
+      "guestName": "Andrei",
+      "hotelName": "Hilton",
+    },
+    Object {
+      "_id": "60a2b328ff1ff0b1bad12a7b",
+      "arrivalDate": 2017-11-25T23:55:35.116Z,
+      "departureDate": 2018-11-25T23:55:35.116Z,
+      "guestName": "Andrei",
+      "hotelName": "Hilton",
+    },
+    Object {
+      "_id": "60a2b4e19eb599b23ee49c9a",
+      "arrivalDate": 2017-11-25T23:55:35.116Z,
+      "departureDate": 2018-11-25T23:55:35.116Z,
+      "guestName": "Steven",
+      "hotelName": "Others",
+    },
+    Object {
+      "_id": "60a2c955f3a0eab483655345",
+      "arrivalDate": 2017-11-26T04:54:35.000Z,
+      "departureDate": 2017-11-25T23:55:35.116Z,
+      "guestName": "another",
+      "hotelName": "hotel1",
+    },
+    Object {
+      "_id": "60a2ca1db65721b498fe244d",
+      "arrivalDate": 2017-10-25T23:51:34.116Z,
+      "departureDate": 2018-11-25T23:55:35.116Z,
+      "guestName": "another2",
+      "hotelName": "hotel1",
+    },
+    Object {
+      "_id": "60a2ca3db65721b498fe244e",
+      "arrivalDate": 2016-10-26T03:51:34.000Z,
+      "departureDate": 2018-11-26T04:55:35.000Z,
+      "guestName": "another3",
+      "hotelName": "hotel5",
+    },
+    Object {
+      "_id": "60a2f3019990b3b67d74e4e1",
+      "arrivalDate": 2018-11-25T23:55:35.116Z,
+      "departureDate": 2019-11-25T23:55:35.116Z,
+      "guestName": "Lanre",
+      "hotelName": "hilton",
+    },
+  ],
+}
+`;

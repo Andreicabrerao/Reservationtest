@@ -43,7 +43,10 @@ mutation {
 ```
 # Testing
 
- - Run npm test (*make sure you have the Jest dependencies installed)
+ - Keep server running
+ - Open another terminal
+ - Navigate to the verver folder: `CD server` folder
+ - Run test `npm run test` (*make sure you have the Jest dependencies installed)
 
  # Enhance/missing
 
